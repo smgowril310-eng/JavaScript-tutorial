@@ -1,0 +1,1 @@
+//Implements error handling to a block of statements
