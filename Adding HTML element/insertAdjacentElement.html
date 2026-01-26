@@ -1,0 +1,10 @@
+<div id="box">
+    <p>Hello</p>
+</div>
+<script>
+    var h1Element=document.createElement("h1")
+    h1Element.innerHTML="Bye"
+    var divbox=document.getElementById("box")
+    //divbox.insertAdjacentElement("beforebegin",h1Element)
+    divbox.insertAdjacentElement("Afterbegin",h1Element)
+</script>
