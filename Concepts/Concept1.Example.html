@@ -1,0 +1,43 @@
+<style>
+   .overlay{
+    background-color:pink;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.8;
+    display: none;
+   }
+   .popupbox{
+    background-color: white;
+    position: absolute;
+    color: black;
+    padding: 20px; ;
+    width: 40%;
+    left: 30%;
+    border-radius: 10px;
+    z-index: 3;
+    display: none;
+   }
+</style>
+<button onclick="Click()">Click</button>
+<div class="overlay"></div>
+<div class="popupbox">
+    <p>You are beautifull in the world!</p>
+    <button onclick="Delete()">delete</button>
+</div>
+<script>
+    //select popupoverlay,popupbox
+    var popupoverlay=document.querySelector(".overlay")
+    var popupbox=document.querySelector(".popupbox")
+    function Click(){
+        popupoverlay.style.display="block";
+        popupbox.style.display="block";
+    }
+    function Delete(){
+        popupoverlay.style.display="none";
+        popupbox.style.display="none";
+    }
+</script>
