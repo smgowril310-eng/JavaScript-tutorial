@@ -23,7 +23,7 @@ var booktitleinput=document.getElementById("book-title-input")
 var bookauthorinput=document.getElementById("book-author-input")
 var bookdescriptioninput=document.getElementById("book-description-input")
 addbook.addEventListener("click",function(event){
-    event.preventDefault()
+   event.preventDefault()
    var div=document.createElement("div")
    div.setAttribute("class","book-container")
    div.innerHTML=`<h1>${booktitleinput.value}</h1>
@@ -34,7 +34,6 @@ addbook.addEventListener("click",function(event){
    popupoverlay.style.display="none"
    popupbox.style.display="none"
 })
-
 function deletebook(event)
 {
     event.target.parentElement.remove()
